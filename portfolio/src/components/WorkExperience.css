@@ -1,0 +1,372 @@
+/* Work Experience Section */
+.experience-section {
+  padding: 6rem 0;
+  background: #0a0a0a;
+  display: flex;
+  align-items: center;
+}
+
+.experience-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 2rem;
+}
+
+.experience-content {
+  display: flex;
+  flex-direction: column;
+  gap: 3rem;
+}
+
+.experience-title {
+  font-size: 3.5rem;
+  font-weight: 700;
+  color: #ffffff;
+  text-align: left;
+  margin-bottom: 2rem;
+  line-height: 1.2;
+}
+
+.timeline-container {
+  position: relative;
+  max-width: 1000px;
+  margin: 0 auto;
+}
+
+.timeline-line {
+  position: absolute;
+  left: 2rem;
+  top: 0;
+  bottom: 0;
+  width: 3px;
+  background: linear-gradient(180deg, #8a2be2 0%, #00ff88 100%);
+  border-radius: 2px;
+  box-shadow: 0 0 10px rgba(138, 43, 226, 0.5);
+}
+
+.experience-list {
+  display: flex;
+  flex-direction: column;
+  gap: 3rem;
+  padding-left: 4rem;
+}
+
+.experience-card {
+  position: relative;
+  display: flex;
+  align-items: flex-start;
+  gap: 1.5rem;
+}
+
+.timeline-dot {
+  position: absolute;
+  left: -3.5rem;
+  top: 1rem;
+  width: 16px;
+  height: 16px;
+  background: linear-gradient(135deg, #8a2be2 0%, #00ff88 100%);
+  border-radius: 50%;
+  border: 3px solid #0a0a0a;
+  box-shadow: 
+    0 0 0 3px rgba(138, 43, 226, 0.3),
+    0 0 15px rgba(138, 43, 226, 0.6);
+  z-index: 2;
+}
+
+.experience-content-wrapper {
+  background: linear-gradient(135deg, #2d1b69 0%, #1a0b2e 50%, #0f0f23 100%);
+  border-radius: 20px;
+  padding: 2rem;
+  position: relative;
+  overflow: hidden;
+  box-shadow: 
+    0 10px 30px rgba(138, 43, 226, 0.2),
+    inset 0 1px 0 rgba(255, 255, 255, 0.1);
+  border: 1px solid rgba(138, 43, 226, 0.3);
+  transition: all 0.3s ease;
+  display: flex;
+  gap: 2rem;
+  width: 100%;
+}
+
+.experience-content-wrapper:hover {
+  transform: translateY(-5px);
+  box-shadow: 
+    0 20px 40px rgba(138, 43, 226, 0.3),
+    inset 0 1px 0 rgba(255, 255, 255, 0.2);
+  border-color: rgba(138, 43, 226, 0.5);
+}
+
+.experience-content-wrapper::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: linear-gradient(135deg, rgba(138, 43, 226, 0.05) 0%, transparent 50%, rgba(0, 255, 136, 0.03) 100%);
+  border-radius: 20px;
+  z-index: 1;
+}
+
+.company-info {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1rem;
+  min-width: 200px;
+  z-index: 2;
+}
+
+.company-logo {
+  width: 80px;
+  height: 80px;
+  object-fit: contain;
+  filter: drop-shadow(0 0 10px rgba(255, 255, 255, 0.3));
+}
+
+.company-details {
+  text-align: center;
+}
+
+.company-name {
+  font-size: 1.5rem;
+  font-weight: 600;
+  color: #ffffff;
+  margin-bottom: 0.5rem;
+}
+
+.position {
+  font-size: 1.1rem;
+  color: #8a2be2;
+  margin-bottom: 0.25rem;
+  font-weight: 500;
+}
+
+.job-meta {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+  margin-top: 1rem;
+}
+
+.job-meta p {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  font-size: 0.9rem;
+  color: #b0b0b0;
+  margin: 0;
+}
+
+.job-meta .icon {
+  font-size: 1rem;
+  filter: drop-shadow(0 0 3px rgba(138, 43, 226, 0.5));
+}
+
+.employment-type {
+  color: #8a2be2 !important;
+  font-weight: 500;
+}
+
+.location {
+  color: #00ff88 !important;
+}
+
+.duration {
+  color: #ffa500 !important;
+}
+
+.experience-description {
+  flex: 1;
+  z-index: 2;
+}
+
+.achievements-list {
+  list-style: none;
+  padding: 0;
+  margin: 0 0 2rem 0;
+}
+
+.achievement-item {
+  color: #e0e0e0;
+  line-height: 1.6;
+  margin-bottom: 1rem;
+  font-size: 1rem;
+  position: relative;
+  padding-left: 1.5rem;
+}
+
+.achievement-item::before {
+  content: '▶';
+  position: absolute;
+  left: 0;
+  color: #8a2be2;
+  font-size: 0.8rem;
+  top: 0.2rem;
+}
+
+.achievement-item:last-child {
+  margin-bottom: 0;
+}
+
+.technologies {
+  margin-top: 1.5rem;
+}
+
+.tech-title {
+  color: #ffffff;
+  font-size: 1.1rem;
+  font-weight: 600;
+  margin-bottom: 1rem;
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.tech-title::before {
+  content: '⚡';
+  font-size: 1.2rem;
+  filter: drop-shadow(0 0 5px rgba(255, 165, 0, 0.6));
+}
+
+.tech-badges {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+}
+
+.tech-tag {
+  background: linear-gradient(135deg, rgba(138, 43, 226, 0.2) 0%, rgba(0, 255, 136, 0.1) 100%);
+  color: #8a2be2;
+  padding: 0.4rem 0.8rem;
+  border-radius: 20px;
+  font-size: 0.85rem;
+  font-weight: 500;
+  border: 1px solid rgba(138, 43, 226, 0.3);
+  transition: all 0.3s ease;
+  position: relative;
+  overflow: hidden;
+}
+
+.tech-tag::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: -100%;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(90deg, transparent, rgba(255, 255, 255, 0.1), transparent);
+  transition: left 0.5s ease;
+}
+
+.tech-tag:hover {
+  background: linear-gradient(135deg, rgba(138, 43, 226, 0.3) 0%, rgba(0, 255, 136, 0.2) 100%);
+  border-color: rgba(138, 43, 226, 0.5);
+  transform: translateY(-2px);
+  box-shadow: 0 5px 15px rgba(138, 43, 226, 0.3);
+}
+
+.tech-tag:hover::before {
+  left: 100%;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .experience-section {
+    padding: 4rem 0;
+  }
+  
+  .experience-container {
+    padding: 0 1rem;
+  }
+  
+  .experience-title {
+    font-size: 2.5rem;
+    text-align: center;
+  }
+  
+  .timeline-line {
+    left: 1rem;
+  }
+  
+  .experience-list {
+    padding-left: 2.5rem;
+  }
+  
+  .timeline-dot {
+    left: -2.5rem;
+  }
+  
+  .experience-content-wrapper {
+    flex-direction: column;
+    text-align: center;
+    gap: 1.5rem;
+  }
+  
+  .company-info {
+    min-width: auto;
+  }
+  
+  .company-name {
+    font-size: 1.3rem;
+  }
+  
+  .position {
+    font-size: 1rem;
+  }
+  
+  .job-meta {
+    align-items: center;
+  }
+}
+
+@media (max-width: 480px) {
+  .experience-title {
+    font-size: 2rem;
+  }
+  
+  .timeline-line {
+    left: 0.5rem;
+  }
+  
+  .experience-list {
+    padding-left: 2rem;
+  }
+  
+  .timeline-dot {
+    left: -2rem;
+    width: 12px;
+    height: 12px;
+  }
+  
+  .experience-content-wrapper {
+    padding: 1.5rem;
+  }
+  
+  .company-logo {
+    width: 60px;
+    height: 60px;
+  }
+  
+  .company-name {
+    font-size: 1.2rem;
+  }
+  
+  .position {
+    font-size: 0.95rem;
+  }
+  
+  .achievement-item {
+    font-size: 0.9rem;
+  }
+  
+  .tech-tag {
+    font-size: 0.75rem;
+    padding: 0.3rem 0.6rem;
+  }
+  
+  .job-meta p {
+    font-size: 0.8rem;
+  }
+}
